@@ -16,7 +16,7 @@ Este projeto propoem um sistema de controle de produtos para usuários, realizan
 ## 🔖 Layout
 
 <h1 align="center">
-    <img alt="Tela aplicação" title="Tela aplicação" src="./public/images/layout.png" width="480px" height="380px" />
+    <img alt="Tela aplicação" title="Tela aplicação" src="./public/images/layout.png" width="520px" height="320px" />
 </h1>
 
 <br/>
