@@ -1,8 +1,8 @@
+const key = '4c61a797-97c2-48a6-a1be-e592b3426e54'
 import { firebaseApp } from "./firebase";
-import { getDatabase, ref, set, remove, update } from "firebase/database";
+import { getDatabase, ref, remove, update } from "firebase/database";
 import { v4 as uuid } from 'uuid'
 import { productProps } from "./types";
-const key = '416c442b-1e63-4567-a561-125a4f4e392a'
 
 //iniciando firebase e banco de dados
 firebaseApp()
@@ -52,4 +52,3 @@ export function deleteProduct(productKey: string) {
   window.location.href = '/home'
 
 }
-

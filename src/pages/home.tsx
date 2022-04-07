@@ -4,6 +4,7 @@ import { Table } from '../components/Home/Table/Table';
 import { Form } from '../components/Home/Form/Form';
 
 import styles from '../styles/home.module.scss'
+import Button from 'react-bootstrap/Button';
 
 export default function Home() {
   const [products, setProducts] = useState([])
@@ -20,8 +21,20 @@ export default function Home() {
     setProductId(key)
   }
 
+  function logoutUser() {
+    localStorage.removeItem('token')
+    window.location.href = '/'
+  }
+
   return (
     <div className={styles.container}>
+
+      <div className={`${styles.logout}`}>
+        <Button onClick={() => logoutUser()}>
+          Logout
+        </Button>
+      </div>
+
       <h2>Cadastro de Produtos</h2>
 
       <Form

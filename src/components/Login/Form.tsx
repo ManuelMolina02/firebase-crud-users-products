@@ -87,7 +87,7 @@ export function Login({ users }) {
         {/* Formulários */}
 
         <div className={styles.formUser}>
-          <h2>Login de Usuário </h2>
+          <h3>Login de Usuário </h3>
           <div>
 
             <Input

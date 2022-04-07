@@ -1,12 +1,11 @@
 
-import { productProps, user } from "../../../service/types";
+import { productProps } from "../../../service/types";
 import { useEffect, useState } from "react";
 
 import styles from './table.module.scss'
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
-import { FaRegAddressCard } from 'react-icons/fa'
 import { BsList } from 'react-icons/bs'
 
 import { AiTwotoneEdit, AiFillDelete } from 'react-icons/ai'
@@ -79,7 +78,7 @@ export function Table({ productsData, showProductId }: tableProps) {
   function filterProducts(productSearch: string) {
 
     const filteredProducts = products.filter(product => {
-      return product.grupo.includes(productSearch)
+      return product.um.includes(productSearch)
     })
 
 
@@ -109,6 +108,7 @@ export function Table({ productsData, showProductId }: tableProps) {
             onChange={(event) => setProductSearch(event.target.value)}
             maxLength={16}
             value={productSearch}
+            placeholder="Buscar por 'um' do produto"
           />
 
           <div>
