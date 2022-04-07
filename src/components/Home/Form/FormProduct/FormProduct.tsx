@@ -73,7 +73,7 @@ export function FormProduct({ values, setValues }: Product) {
               onChange={(event) => setValues.setGrupo(event.target.value)}
 
             >
-              <option>Selecione um grupo</option>
+              <option value={values.grupo}>{values.grupo ? String(values.grupo) : 'Selecione um grupo'}</option>
               <option value="SPRI">SPRI</option>
               <option value="RITR">RITR</option>
               <option value="MINE">MINE</option>
@@ -90,7 +90,7 @@ export function FormProduct({ values, setValues }: Product) {
               onChange={(event) => setValues.setUm(event.target.value)}
 
             >
-              <option>Selecione uma unidade</option>
+              <option value={values.um}>{values.um ? String(values.um) : 'Selecione uma medida'}</option>
               <option value="UN">UN</option>
               <option value="KG">KG</option>
               <option value="AP">AP</option>
