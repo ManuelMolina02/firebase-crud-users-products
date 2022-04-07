@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+<h1 align="center">
+   Teste Front-End | CRUD em lista de usuários
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-funcionalidades-disponiveis">Funcionalidades Disponiveis</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-instalar-o-projeto">Como instalar o projeto?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
 
-## Available Scripts
+## 💻 Projeto
 
-In the project directory, you can run:
+Este projeto propoem um sistema de controle de produtos para usuários, realizando um controle de login, sendo possível adicionar, editar e excluir as informações cadastradas em um banco de dados.
 
-### `yarn start`
+## 🔖 Layout
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h1 align="center">
+    <img alt="Tela aplicação" title="Tela aplicação" src="./public/images/layout.png" width="560px" height="380px" />
+</h1>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
+<br/>
 
-### `yarn test`
+## 🚀 Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [NextJS](https://nodejs.org/en/)
+- [ReactJS](https://reactjs.org)
+- [Bootstrap React](https://react-bootstrap.github.io/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Scss](https://sass-lang.com/)
+- [Firebase](https://firebase.google.com/)
 
-### `yarn build`
+### 📡 Ferramentas Complementares
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Eslint](https://eslint.org/)
+- [Uuid](https://www.uuidgenerator.net)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙ Funcionalidades Disponiveis
 
-### `yarn eject`
+### Regras de negócio
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> Usuário:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Deve realizar o cadastro de um produto onde todos os campos são obrigatórios
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Deve ser realizada a exclusão de um produto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Deve ser realizada a edição de um produto
 
-## Learn More
+- Não deve realizar cadastro se os campos do formulário forem vazios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Não deve adicionar 2 produtos com o mesmo código de cliente
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Produtos:
 
-### Code Splitting
+- O usuário pode cadastrar um ou mais produtos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Layout
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> Interface 
 
-### Making a Progressive Web App
+- Formulário contém botões dinâmicos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Botões da tabela devem adotar tema de acordo com as propriedades repassadas
 
-### Advanced Configuration
+- Apresentar um alerta quando uma operação for concluída ou encontrar algum impedimento
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤔 Como instalar o projeto?
 
-### Deployment
+- Faça um clone desse repositório;
+- Acesse um arquivo local desejado através do terminal e digite: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+```sh
+git clone https://github.com/ManuelMolina02/firebase-crud-users-products.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Após baixar o projeto, acesse o repositório via terminal e execute os seguintes comandos:
+
+```sh
+npm install
+npm run dev
+```
+
+<br/>
+<br/>
+
+Feito com 💜 por Manuel Molina 👋 Me contate através do [LinkedIn!](https://www.linkedin.com/in/manuel-angel-berger-molina-ba08b3174/)

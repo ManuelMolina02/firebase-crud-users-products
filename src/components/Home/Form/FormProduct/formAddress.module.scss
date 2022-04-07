@@ -1,0 +1,40 @@
+.formProduct {
+  display: flex;
+
+  flex-direction: column;
+  gap: 6px;
+  
+  h2 {
+    margin-bottom: 36px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+
+
+    border-radius: 8px;
+    padding: 2.4rem;
+    margin: 0 auto;
+
+    background-color: rgba(255, 255, 255, 0.048);
+
+    > div {
+      display: flex;
+      gap: 12px;
+
+      &:first-child {
+        display: grid;
+        grid-template-columns: 25% 50% 22% ;
+      }
+
+      &:last-child {
+        display: grid;
+
+        grid-template-columns: 25% 30% 30%;
+      }
+    }
+  }
+}

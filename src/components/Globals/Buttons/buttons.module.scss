@@ -1,0 +1,49 @@
+.button {
+  border-radius: 6px;
+  border: none;
+
+  font-size: 20px;
+  color: rgb(224, 224, 224);
+}
+
+.createUser {
+  &:hover {
+    background-color: #38a169 !important;
+    color: white;
+  }
+}
+
+.updateUser {
+  transition: background 0.3s;
+
+  &:hover {
+    color: white;
+    background-color: #196caf !important;
+  }
+}
+
+.clearData {
+  width: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 70%;
+    height: 70%;
+  }
+
+  &:hover {
+    background-color: #f84343d3 !important;
+  }
+}
+
+.updateAddress {
+  width: 226px !important;
+  transition: background 0.3s;
+
+  &:hover {
+    color: white;
+    background-color: #196caf !important;
+  }
+}
